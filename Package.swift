@@ -14,7 +14,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/fluent.git", from: "3.0.0"),
 
         // 🐬 Pure Swift MySQL client built on non-blocking, event-driven sockets.
-        .package(url: "https://github.com/weijentu/mysql.git", from: "3.2.2"),
+        .package(url: "https://github.com/weijentu/mysql.git", .revision("0f6fdd81632a001cc4d98610645b53e18680c319")),
     ],
     targets: [
         .target(name: "FluentMySQL", dependencies: ["Async", "FluentSQL", "MySQL"]),
